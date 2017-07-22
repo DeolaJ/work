@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personality Test</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+        <link rel="stylesheet" href="css/basic.style.css" type="text/css"/>
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .personality-mainbody {
+            float: right;
+            background-color: rgb(241,241,241);
+            height: 60rem;
+        }
+
+        .personality-sidebar {
+            float: left;
+            margin-top: 15rem;
+            box-shadow: 0 2px 5px rgb(140,140,140);
+            height: 45rem;
+        }
+
+        .personality-wrapper {
+            margin-top: 80px;
+        }    
+
+        .personality-sidebar-content {
+            text-align: justify;
+        }
+
+        .personality-sidebar-content a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .personality-sidebar-menu {
+            margin-bottom: 20px;
+            padding: 0;
+        }
+
+        .personality-sidebar-menu li {
+            padding: 0 25px;
+            list-style-type: none;
+        }
+
+        .personality-sidebar-menu a {
+            line-height: 45px;
+            font-size: 17px;
+        }
+
+        .personality-sidebar-menu li:hover {
+            background-color: rgb(227,227,227);
+        }    
+
+        .personality-header {
+            margin-top: 50px;
+            background-color: white;
+        }
+
+        .personality-header h1 {
+            box-shadow: 0 0 5px rgb(180,180,180);
+            font-size: 27px;
+            line-height: 45px;
+            text-align: center;
+        }
+
+        .personality-content-top {
+            padding: 25px 10%;
+            font-size: 26px;
+            margin: 0 auto;
+            box-shadow: 0 0 5px rgb(180,180,180);
+            background-color: white;
+        }
+
+        .personality-content-top p {
+            font-size: 30px;
+            padding: 20px 10%;
+            text-align: center;
+        }
+
+        .personality-button-pos {
+            width: 100%;
+            padding: 0 25%;
+            text-align: center;
+            font-size: bold;
+        }
+
+        .personality-button-width {
+            width: 34%;
+        }
+
+        .icon-bar {
+            background-color: black;
+        }
+
+        .personality-icon-pos {
+            position: relative;
+            top: -5px;
+        }
+
+        .personality-icon-pos:hover {  
+            background-color: rgb(241,241,241);
+        }
+
+        @media screen and (max-width: 1250px) {
+            .personality-content-top {
+                padding: 20px 6%;
+            }
+        }
+
+        @media screen and (max-width: 1049px) {
+            .personality-content-top {
+                padding: 15px 3%;
+            }
+
+            .personality-button-pos {
+                padding: 0 20%;
+                font-size: 18px;
+            }
+
+            .personality-content-top p {
+                font-size: 25px;
+            }
+
+            .personality-sidebar-menu li {
+                padding: 0 8px;
+            }
+
+            .personality-sidebar-menu a {
+                line-height: 45px;
+                font-size: 15px;
+            }    
+        }
+
+        @media screen and (max-width: 900px) {
+            .personality-content-top {
+                font-size: 19px;
+            }
+
+            .personality-content-top p {
+                font-size: 22px;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+                .personality-sidebar-content {
+                    padding: 10px;
+                }
+
+              .row-offcanvas {
+                position: relative;
+                -webkit-transition: all 0.25s ease-out;
+                -moz-transition: all 0.25s ease-out;
+                transition: all 0.25s ease-out;
+              }
+
+              .row-offcanvas-right
+              .personality-sidebar-offcanvas {
+                right: -41.6%;
+              }
+
+              .row-offcanvas-left
+              .personality-sidebar-offcanvas {
+                left: -41.6%;
+              }
+
+              .row-offcanvas-right.active {
+                right: 41.6%;
+              }
+
+              .row-offcanvas-left.active {
+                left: 41.6%;
+              }
+
+              .personality-sidebar-offcanvas {
+                position: absolute;
+                top: 0;
+                width: 41.6%;
+              }
+
+              #personality-sidebar {
+                padding-top:0;
+              }
+            }
+
+        @media screen and (max-width: 750px) {
+            .personality-button-pos {
+                padding: 0 10%;
+            }
+
+            .personality-content-top {
+                font-size: 16px;
+            }
+
+            .personality-content-top p {
+                font-size: 17px;
+                padding: 5px 5%;
+            }
+
+            .personality-header h1 {
+                font-size: 23px;
+                line-height: 40px;
+            }
+        }    
+
+        @media screen and (max-width: 580px) {
+            .personality-button-pos {
+                padding: 0;
+            }
+
+            .personality-content-top p {
+                font-size: 15px;
+                padding: 3px;
+            }            
+
+            .personality-header h1 {
+                font-size: 20px;
+                line-height: 36px;
+            }
+
+            .personality-button-width {
+                font-size: 15px;
+                font-weight: bold;
+                width: 100%;
+            }
+        }
+    </style>
+<body>
+<div class='container-fluid'>
+        <div class='row row-offcanvas row-offcanvas-left personality-wrapper'>
+            <div class='personality-sidebar col-lg-3 col-md-3 col-sm-3 col-xs-6 personality-sidebar-offcanvas' id='personality-sidebar'>
+                <div class='container-fluid personality-sidebar-content'><span class="sr-only">(current)</span>
+                    <ul class='personality-sidebar-menu'>
+                        <li><a href='#'>Lorem</a></li>
+                        <li><a href='#'>Lorem Ipsum</a></li>
+                        <li><a href='#'>Company Goals</a></li>
+                        <li class='active'><a href='#'>Tests</a></li>
+                        <li><a href='#'>Settings</a></li>
+                    </ul>
+                </div>
+            </div>           
+            <div class='container-fluid personality-mainbody col-lg-9 col-md-9 col-sm-9 col-xs-12'>
+                <div class='personality'>
+                    <div class='hidden-lg hidden-md visible-sm visible-xs'>
+                            <button type="button" id='togglebutton' class="navbar-toggle collapsed btn-primary pull-left personality-icon-pos" data-toggle="offcanvas" data-target=".personality-sidebar-nav" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                    </div>
+                    <div class='personality-header'>
+                        <h1>PERSONALITY TEST AND MOOD TEST</h1>
+                    </div>
+                    <br>
+                    <div class='personality-content container-fluid'>
+                        <div class='personality-content-top'>
+                            <div>
+                                Hello,
+                                <p>You are about to take the <strong>personality and mood</strong> TEST</p>
+                            </div> 
+                            <br>
+                            <div class='container personality-button-pos'>    
+                                <button type='submit' class='btn btn-primary personality-button-width'>TAKE TEST</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+</div>        
+<script src='jquery.js'></script>
+<script src='js/bootstrap.js'></script>
+<script>
+    $(document).ready(function() {
+  $('[data-toggle=offcanvas]').click(function() {
+    $('.row-offcanvas').toggleClass('active');
+  });
+});
+</script>
+</body>
+</html>    

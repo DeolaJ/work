@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+	<meta charset = 'UTF-8' />
+	<meta name="viewport" content="width=content-width,s initial-scale=1.0" /> <!-- to scale the width of the page to the width of the page-->
+	<meta http-epuiv='X-UA-Compatible' content="IE=edge" /> <!-- For Internet Explorer older versions -->
+	<title>
+		Market_hub
+	</title>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="main2.css" rel='stylesheet' type='text/css' />
+</head>
+<body style='padding: 0; margin: 0 auto'>
+	<header style='margin: 0; background-color: #34D800 !important' class='hidden-xs'>
+		<nav class="navbar navbar-fixed-top navbar-default">
+	  		<div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <a class="navbar-brand pull-left" id='logoname' href="#">dee Market Hub<span><img src="icon.jpg" height='34.6px' width = '32.8px' /></span></a>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div id='topmenu' class='pull-right'>
+				    <div class="container" >
+				      <ul class="nav navbar-nav">
+				        <li class="active"><a href="#">Merchants</a></li>
+				        <li><a href="#">Services</a></li>
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Offers <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="#">Today</a></li>
+				            <li><a href="#">This Week</a></li>
+				            <li><a href="#">This Month</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">Discounts</a></li>
+				          </ul>
+				        </li>
+				        <li><a href="#">Contact</a></li>
+				      </ul>
+				      <form class="navbar-form navbar-left">
+				        <div class="form-group">
+				          <input id= 'search' type="text" class="form-control" placeholder="Search">
+				        </div>
+				        <button type="submit" class="btn btn-default"><span class='glyphicon glyphicon-search'></span></button>
+				      </form>
+					</div>  
+			    </div><!-- /.navbar-collapse -->
+		    </div><!-- /.container-fluid -->
+		</nav>
+	</header>
+	<header class='hidden-lg hidden-md hidden-sm visible-xs'> <!-- For mobile screens -->
+		<nav class="navbar">
+		  	<div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					    <button type="button" id='topmenubutton' class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+				      	</button>
+				      <a class="navbar-brand pull-left" id='logoname'><span><img src="icon.jpg" height='40.6px' width = '38.8px' /></span></a>
+				    </div>
+
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				<div id='topmenu'>
+				    	 <div class="collapse navbar-collapse container pull-right" id="bs-example-navbar-collapse-1">
+				      		<ul class="nav navbar-nav" id='register'>
+				        		<li class="active"><a href="#" class='text-centre register1'>REGISTER<span class="sr-only">(current)</span></a></li>
+					        </ul>
+						</div>  
+				    </div><!-- /.navbar-collapse -->
+		    </div><!-- /.container-fluid -->
+		</nav>
+	</header>
+	<div id='heading' class= 'hidden-lg hidden-md hidden-sm'> <!-- For mobile screens -->
+		<img src='DEE-HUB.png' alt='...' class='img-responsive'>
+	</div>
+	<div id='thecarousel' class='carousel slide hidden-xs' data-ride='carousel'>
+		<ol class='carousel-indicators'>
+			<li data-target='#thecarousel' data-slide-to="0" class='active'></li>
+			<li data-target='#thecarousel' data-slide-to="1"></li>
+		</ol>
+		<div class='carousel-inner' role="listbox">
+			<div class='item active'>
+				<div class='slide1'></div>
+					<img src="DEE-HUB.png" alt="Home Page pic" class='img-responsive' height='600px'>
+				</div>
+			<div class='item'>
+				<div class='slide2'></div>
+					<img src="MARKET.png" alt="Home Page pic" class='img-responsive' height='600px'>
+				</div>
+		</div>
+
+	</div>
+	<div class='learnmore2 container hidden-lg hidden-md hidden-sm'>
+		<div class='container'>	
+			<div id='learnmore1' class='hidden-lg hidden-md hidden-sm'>
+				<a href='#learnmore' class='btn btn-success btn-md' id='learnmorelink' data-toggle='collapse' role='button'>Learn More <span class='glyphicon glyphicon-chevron-down'></span></a>
+			</div>
+		</div>
+		<div id="learnmore" class='collapse hidden-lg hidden-md hidden-sm'>
+			<div id='thecarousel' class='carousel slide' data-ride='carousel'>
+				<ol class='carousel-indicators'>
+					<li data-target='#thecarousel' data-slide-to="0" class='active'></li>
+					<li data-target='#thecarousel' data-slide-to="1"></li>
+					<li data-target='#thecarousel' data-slide-to="2"></li>
+				</ol>
+				<div class='carousel-inner'  role="listbox">
+					<div class='item active'>
+					<div class='slide1'></div>
+						<img src='images/lorem1.png' alt='...' class='img-responsive' >
+					</div>
+					<div class='item'>
+					<div class='slide2'></div>
+						<img src='images/lorem2.png' alt='...' class='img-responsive'>
+					</div>
+					<div class='item'>
+					<div class='slide3'></div>
+						<img src='images/lorem3.png' alt='...' class='img-responsive'>
+					</div>
+				</div>
+				<a class='left carousel-control' href='#thecarousel' data-slide='prev'>
+					<span class='glyphicon glyphicon-chevron-left'></span></a>
+				<a class='right carousel-control' href='#thecarousel' data-slide='next'>
+					<span class='glyphicon glyphicon-chevron-right'></span></a>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class='container' id='left-pane'>
+		<div>
+			<ul class='nav nav-pills'>
+				<li class='active'><a href='#featured' data-toggle='tab'>Featured</a></li>
+				<li><a href='#today' data-toggle='tab'>Today</a></li>
+				<li class='dropdown'><a class='dropdown-toggle' data-toggle='dropdown' href='#'>Time<span class='caret'></span></a>
+					<ul class='dropdown-menu'>
+						<li><a href='#thisweek' data-toggle='tab'>This Week</a></li>
+						<li><a href='#lastweek' data-toggle='tab'>Last Week</a></li>
+						<li><a href='#thismonth' data-toggle='tab'>This month</a></li>
+						<li><a href='#lastmonth' data-toggle='tab'>Last month</a></li>
+						<li><a href='#thisyear' data-toggle='tab'>This year</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class='tab-content'>
+				<div id='featured' class='tab-pane fade in active'>
+					<div class='row container'>
+						<div class='col-lg-4 col-md-4 col-sm-4 col-xs-6'>
+							<div class='thumbnails'>
+								<img src='images/emperor1.png' alt="Emperor's Design" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Emperor's Design</h4>
+									<p>For quality Graphics at Affordable Prices</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Contact Us</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-4 col-xs-6'>
+							<div class='thumbnails'>
+								<img src='images/badmus1.png' alt="Badmus Apparel" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Badmus Apparel</h4>
+									<p>For quality shoes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='clearfix visible-xs'></div>
+						<div class='col-lg-4 col-md-4 col-sm-4 col-xs-6'>
+							<div class='thumbnails'>
+								<img src='images/eagles3.png' alt="Eagles Collection" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Eagles Collection</h4>
+									<p>For quality clothes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='clearfix hidden-xs'></div>
+						<div class='col-lg-4 col-md-4 col-sm-4 col-xs-6'>
+							<div class='thumbnails'>
+								<img src='images/favour1.png' alt="Accessories by Favour" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Accessories by Favour</h4>
+									<p>For quality chokers</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='clearfix hidden-lg hidden-md hidden-sm visible-xs'></div>
+						<div class='col-lg-4 col-md-4 col-sm-4 col-xs-6'>
+							<div class='thumbnails'>
+								<img src='images/eagles2.png' alt="Eagles Collection" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Eagles Collection</h4>
+									<p>For quality shoes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-4 col-xs-6'>
+							<div class='thumbnails'>
+								<img src='images/eugene1.png' alt="Eugene Shoes" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Eugene Shoes</h4>
+									<p>For quality shoes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<br><br>
+					<nav>
+						<ul class='pagination'>
+							<li><a href='#'><span>&laquo;&laquo;</span></a></li>
+							<li><a href='#'><span>Previous</span></a></li>
+							<li><a href='#'><span class='glyphicon glyphicon-option-horizontal'></span></a></li>
+							<li><a href='#'><span>Next</span></a></li>
+							<li><a href='#'><span>&raquo;&raquo;</span></a></li>
+						</ul>
+					</nav>
+				</div>
+				<div id='today' class='tab-pane fade in'>
+					<div class='row'>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/emperor1.png' alt="Emperor's Design" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Emperor's Design</h4>
+									<p>For quality Graphics at Affordable Prices</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Contact Us</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab2'>
+							<div class='thumbnails'>
+								<img src='images/badmus1.png' alt="Badmus Apparel" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Badmus Apparel</h4>
+									<p>For quality shoes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/eagles3.png' alt="Eagles Collection" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Eagles Collection</h4>
+									<p>For quality clothes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab2'>
+							<div class='thumbnails'>
+								<img src='images/favour1.png' alt="Accessories by Favour" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Accessories by Favour</h4>
+									<p>For quality chokers</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/eagles2.png' alt="Eagles Collection" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Eagles Collection</h4>
+									<p>For quality shoes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/eugene1.png' alt="Eugene Shoes" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Eugene Shoes</h4>
+									<p>For quality shoes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<br><br>
+					<nav>
+						<ul class='pagination'>
+							<li><a href='#'><span>&laquo;&laquo;</span></a></li>
+							<li><a href='#'><span>Previous</span></a></li>
+							<li><a href='#'><span class='glyphicon glyphicon-option-horizontal'></span></a></li>
+							<li><a href='#'><span>Next</span></a></li>
+							<li><a href='#'><span>&raquo;&raquo;</span></a></li>
+						</ul>
+					</nav>
+				</div>
+				<div id='thisweek' class='tab-pane fade in'>
+					<div class='row'>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/emperor1.png' alt="Emperor's Design" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Emperor's Design</h4>
+									<p>For quality Graphics at Affordable Prices</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Contact Us</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab2'>
+							<div class='thumbnails'>
+								<img src='images/badmus1.png' alt="Badmus Apparel" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Badmus Apparel</h4>
+									<p>For quality shoes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/eagles3.png' alt="Eagles Collection" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Eagles Collection</h4>
+									<p>For quality clothes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab2'>
+							<div class='thumbnails'>
+								<img src='images/favour1.png' alt="Accessories by Favour" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Accessories by Favour</h4>
+									<p>For quality chokers</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/eagles2.png' alt="Eagles Collection" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Eagles Collection</h4>
+									<p>For quality shoes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/eugene1.png' alt="Eugene Shoes" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Eugene Shoes</h4>
+									<p>For quality shoes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<br><br>
+					<nav>
+						<ul class='pagination'>
+							<li><a href='#'><span>&laquo;&laquo;</span></a></li>
+							<li><a href='#'><span>Previous</span></a></li>
+							<li><a href='#'><span class='glyphicon glyphicon-option-horizontal'></span></a></li>
+							<li><a href='#'><span>Next</span></a></li>
+							<li><a href='#'><span>&raquo;&raquo;</span></a></li>
+						</ul>
+					</nav>
+				</div>
+				<div id='lastweek' class='tab-pane fade in'>
+					<div class='row'>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/emperor1.png' alt="Emperor's Design" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Emperor's Design</h4>
+									<p>For quality Graphics at Affordable Prices</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Contact Us</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab2'>
+							<div class='thumbnails'>
+								<img src='images/badmus1.png' alt="Badmus Apparel" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Badmus Apparel</h4>
+									<p>For quality shoes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/eagles3.png' alt="Eagles Collection" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Eagles Collection</h4>
+									<p>For quality clothes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab2'>
+							<div class='thumbnails'>
+								<img src='images/favour1.png' alt="Accessories by Favour" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Accessories by Favour</h4>
+									<p>For quality chokers</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/eagles2.png' alt="Eagles Collection" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Eagles Collection</h4>
+									<p>For quality shoes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/eugene1.png' alt="Eugene Shoes" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Eugene Shoes</h4>
+									<p>For quality shoes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<br><br>
+					<nav>
+						<ul class='pagination'>
+							<li><a href='#'><span>&laquo;&laquo;</span></a></li>
+							<li><a href='#'><span>Previous</span></a></li>
+							<li><a href='#'><span class='glyphicon glyphicon-option-horizontal'></span></a></li>
+							<li><a href='#'><span>Next</span></a></li>
+							<li><a href='#'><span>&raquo;&raquo;</span></a></li>
+						</ul>
+					</nav>
+				</div>
+				<div id='thismonth' class='tab-pane fade in'>
+					<div class='row'>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/emperor1.png' alt="Emperor's Design" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Emperor's Design</h4>
+									<p>For quality Graphics at Affordable Prices</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Contact Us</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab2'>
+							<div class='thumbnails'>
+								<img src='images/badmus1.png' alt="Badmus Apparel" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Badmus Apparel</h4>
+									<p>For quality shoes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/eagles3.png' alt="Eagles Collection" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Eagles Collection</h4>
+									<p>For quality clothes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab2'>
+							<div class='thumbnails'>
+								<img src='images/favour1.png' alt="Accessories by Favour" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Accessories by Favour</h4>
+									<p>For quality chokers</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/eagles2.png' alt="Eagles Collection" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Eagles Collection</h4>
+									<p>For quality shoes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/eugene1.png' alt="Eugene Shoes" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Eugene Shoes</h4>
+									<p>For quality shoes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<br><br>
+					<nav>
+						<ul class='pagination'>
+							<li><a href='#'><span>&laquo;&laquo;</span></a></li>
+							<li><a href='#'><span>Previous</span></a></li>
+							<li><a href='#'><span class='glyphicon glyphicon-option-horizontal'></span></a></li>
+							<li><a href='#'><span>Next</span></a></li>
+							<li><a href='#'><span>&raquo;&raquo;</span></a></li>
+						</ul>
+					</nav>
+				</div>
+				<div id='lastmonth' class='tab-pane fade in'>
+					<div class='row'>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/emperor1.png' alt="Emperor's Design" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Emperor's Design</h4>
+									<p>For quality Graphics at Affordable Prices</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Contact Us</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab2'>
+							<div class='thumbnails'>
+								<img src='images/badmus1.png' alt="Badmus Apparel" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Badmus Apparel</h4>
+									<p>For quality shoes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/eagles3.png' alt="Eagles Collection" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Eagles Collection</h4>
+									<p>For quality clothes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab2'>
+							<div class='thumbnails'>
+								<img src='images/favour1.png' alt="Accessories by Favour" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Accessories by Favour</h4>
+									<p>For quality chokers</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/eagles2.png' alt="Eagles Collection" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Eagles Collection</h4>
+									<p>For quality shoes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/eugene1.png' alt="Eugene Shoes" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Eugene Shoes</h4>
+									<p>For quality shoes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<br><br>
+					<nav>
+						<ul class='pagination'>
+							<li><a href='#'><span>&laquo;&laquo;</span></a></li>
+							<li><a href='#'><span>Previous</span></a></li>
+							<li><a href='#'><span class='glyphicon glyphicon-option-horizontal'></span></a></li>
+							<li><a href='#'><span>Next</span></a></li>
+							<li><a href='#'><span>&raquo;&raquo;</span></a></li>
+						</ul>
+					</nav>
+				</div>
+				<div id='thisyear' class='tab-pane fade in'>
+					<div class='row'>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/emperor1.png' alt="Emperor's Design" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Emperor's Design</h4>
+									<p>For quality Graphics at Affordable Prices</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Contact Us</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab2'>
+							<div class='thumbnails'>
+								<img src='images/badmus1.png' alt="Badmus Apparel" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Badmus Apparel</h4>
+									<p>For quality shoes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/eagles3.png' alt="Eagles Collection" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Eagles Collection</h4>
+									<p>For quality clothes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab2'>
+							<div class='thumbnails'>
+								<img src='images/favour1.png' alt="Accessories by Favour" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Accessories by Favour</h4>
+									<p>For quality chokers</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/eagles2.png' alt="Eagles Collection" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Eagles Collection</h4>
+									<p>For quality shoes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>
+						<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6' id='tab1'>
+							<div class='thumbnails'>
+								<img src='images/eugene1.png' alt="Eugene Shoes" class='img-thumbnail img-responsive'>
+								<div class='caption'>
+									<h4>Eugene Shoes</h4>
+									<p>For quality shoes</p>
+									<p><a href='#' class='btn btn-primary btn-sm'>Shop Now</a></p>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<br><br>
+					<nav>
+						<ul class='pagination'>
+							<li><a href='#'><span>&laquo;&laquo;</span></a></li>
+							<li><a href='#'><span>Previous</span></a></li>
+							<li><a href='#'><span class='glyphicon glyphicon-option-horizontal'></span></a></li>
+							<li><a href='#'><span>Next</span></a></li>
+							<li><a href='#'><span>&raquo;&raquo;</span></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class='extra-info'>
+			<div class='row container well well-sm '>
+				<div class='column col-lg-2  col-md-3 col-sm-6 col-xs-12 text-justify' >
+					<h1><a disabled>Content1</a></h1>
+					    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					    Pellentesque sit amet lorem ligula. Nam pulvinar nunc ac magna
+					    aliquam quis sodales dui elementum. Fusce a lacus leo. Maecenas ut
+					    dui eu quam condimentum sagittis. Morbi aliquam auctor facilisis. Ut
+					    urna ligula, lobortis vitae porta ut, auctor id eros. Vestibulum
+					    luctus malesuada tortor nec fermentum. Suspendisse potenti. Proin
+					    sapien nisl, lobortis varius eleifend vitae, pretium mattis leo.</div>
+				</div>
+				<div class='column col-lg-2 col-lg-offset-1 col-md-3 col-sm-6 col-xs-12 text-justify'>
+					<h1>Content2</h1>
+					    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					    Pellentesque sit amet lorem ligula. Nam pulvinar nunc ac magna
+					    aliquam quis sodales dui elementum. Fusce a lacus leo. Maecenas ut
+					    dui eu quam condimentum sagittis. Morbi aliquam auctor facilisis. Ut
+					    urna ligula, lobortis vitae porta ut, auctor id eros. 
+				</div>
+				<div class='clearfix visible-sm'></div>
+				<div class='column col-lg-2 col-lg-offset-1 col-md-3 col-sm-6 col-xs-12 text-justify'>
+					<h1>Content3</h1>
+						Sed tincidunt, tellus et ultricies lacinia, ipsum magna laoreet
+					    velit, iaculis mattis quam ante vitae tellus. Aliquam lacinia, lacus
+					    vel gravida tristique, massa velit suscipit mauris, non sagittis
+					    diam tellus in dui. Morbi ultrices turpis nec ipsum ultrices in
+					    scelerisque sapien tempor.
+				</div>
+				<div class='column col-lg-2 col-lg-offset-1 col-md-3 col-sm-6 col-xs-12 text-justify'>
+					<h1>Content4</h1>
+					    Pellentesque habitant morbi tristique senectus et netus et malesuada
+					    fames ac turpis egestas. Vivamus laoreet placerat ipsum ac congue.
+					    In hac habitasse platea dictumst. Sed molestie ullamcorper diam
+					    rutrum elementum. Curabitur sagittis gravida dolor id tincidunt. In
+					    posuere dui in justo consequat nec ullamcorper urna placera.
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class='hidden-xs'>
+		<div class='row foot'>
+			<div>
+				<div class='container foot1 col-lg-4 col-md-4 col-sm-6 col-xs-12 hidden-xs'>
+					<h4>INFORMATION</h4>
+					<br>
+					<ul>
+						<li><a>About Us</a></li>
+						<hr>
+						<li><a>Become an Affiliate</a></li>
+						<hr>
+						<li><a>Sell on Dee Market Hub</a></li>
+						<hr>
+						<li><a>Contact us</a></li>
+						<hr>
+					</ul>
+				</div>
+				<div class='container foot1 col-lg-4 col-md-4 col-sm-6 col-xs-12 hidden-xs'>
+					<h4>SOCIAL MEDIA CHANNELS</h4>
+					<br>
+					<ul>
+						<li><a>Facebook</a></li>
+						<hr>
+						<li><a>Twitter</a></li>
+						<hr>
+						<li><a>Instagram</a></li>
+						<hr>
+					</ul>
+				</div>
+				<div class='container foot1 col-lg-4 col-md-4 col-sm-6 col-xs-12'>
+					<div class='hidden-xs'>
+						<h4>PAYMENT SYSTEM</h4>
+						<br>
+						<ul>
+							<li><a>CASH ON DELIVERY</a></li>
+							<hr>
+						</ul>
+					</div>
+					<div>
+						<h4>Sign Up For Newsletter</h4>
+						<br>
+						<input type="email" placeholder='Enter your email'>
+						<button type='submit' class='btn btn-md'>Submit</button>
+					</div>
+				</div>
+			</div>
+			<div class='row hidden-lg hidden-md hidden-sm visible-xs social container'>
+				<ul class='nav nav-pills' id='social'>
+					<li class='col-xs-3 bg-primary'><a href='#'>Facebook</a></li>
+					<li class='col-xs-3 bg-success'><a href='#'>Twitter</a></li>
+					<li class='col-xs-3 bg-danger'><a href='#'>Instagram</a></li>
+					<li class='col-xs-3 bg-warning'><a href='#'>Call</a></li>
+				</ul>
+			</div>
+		</div>
+		<p>Copywright Reserved by deemarkethub.com</p>
+	</footer>
+	<footer class='hidden-lg hidden-md hidden-sm'>
+		<div class='foot'>
+			<div class='foot1'>
+				<h4>Sign Up For Newsletter</h4>
+				<br>
+				<input type="email" placeholder='Enter your email'>
+				<button type='submit' class='btn btn-md'>Submit</button>
+			</div>
+			<div class='container'>
+				<div class='row hidden-lg hidden-md hidden-sm visible-xs'>
+					<ul class='nav nav-pills' id='social'>
+						<li class='col-xs-3 bg-info btn-xs'><a href='#'>Facebook</a></li>
+						<li class='col-xs-3 bg-success btn-xs'><a href='#'>Twitter</a></li>
+						<li class='col-xs-3 bg-danger btn-xs'><a href='#'>Instagram</a></li>
+						<li class='col-xs-3 bg-warning btn-xs'><a href='#'>Call</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</footer>	
+<script src='jquery.js'></script>
+<script src='js/bootstrap.js'></script>
+</body>
+</html>
+
+<!-- <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Pellentesque sit amet lorem ligula. Nam pulvinar nunc ac magna
+    aliquam quis sodales dui elementum. Fusce a lacus leo. Maecenas ut
+    dui eu quam condimentum sagittis. Morbi aliquam auctor facilisis. Ut
+    urna ligula, lobortis vitae porta ut, auctor id eros. Vestibulum
+    luctus malesuada tortor nec fermentum. Suspendisse potenti. Proin
+    sapien nisl, lobortis varius eleifend vitae, pretium mattis leo.
+    Donec eu nisi turpis, sit amet rutrum leo. Cras volutpat metus quis
+    ipsum blandit sed laoreet odio pharetra.
+</p>
+<p>
+    Sed tincidunt, tellus et ultricies lacinia, ipsum magna laoreet
+    velit, iaculis mattis quam ante vitae tellus. Aliquam lacinia, lacus
+    vel gravida tristique, massa velit suscipit mauris, non sagittis
+    diam tellus in dui. Morbi ultrices turpis nec ipsum ultrices in
+    scelerisque sapien tempor. Sed aliquet sollicitudin lacus sed
+    dignissim. Maecenas convallis consectetur enim, id lobortis mauris
+    rhoncus at. Phasellus malesuada porttitor lorem, ac facilisis ligula
+    tincidunt sed. Fusce adipiscing, nunc nec luctus lacinia, quam odio
+    malesuada velit, ut placerat augue elit et nisl. Sed aliquam
+    pharetra libero, id lobortis velit faucibus a. Duis at fringilla
+    ipsum.
+</p>
+<p>
+    Pellentesque habitant morbi tristique senectus et netus et malesuada
+    fames ac turpis egestas. Vivamus laoreet placerat ipsum ac congue.
+    In hac habitasse platea dictumst. Sed molestie ullamcorper diam
+    rutrum elementum. Curabitur sagittis gravida dolor id tincidunt. In
+    posuere dui in justo consequat nec ullamcorper urna placerat.
+    Suspendisse diam velit, volutpat et commodo ut, ornare vel felis.
+    Maecenas aliquet pulvinar elit, lacinia faucibus metus imperdiet
+    non. Donec vel sem a est bibendum convallis id vitae nisl.
+    Suspendisse nec enim nulla. Morbi justo urna, sagittis quis lacinia
+    at, venenatis a magna. Mauris id ultrices nunc. In dui elit,
+    ultrices a sagittis sit amet, consectetur in neque. Nunc viverra
+    volutpat orci, et adipiscing augue fermentum ut. Ut sollicitudin
+    molestie interdum. Curabitur non risus arcu. </p>
+</p>
+-->

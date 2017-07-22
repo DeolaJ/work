@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reset Password Page</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+        <link rel="stylesheet" href="css/basic.style.css" type="text/css"/>
+    </head>
+    <style>
+    .resetpg-input {
+          width: 60%;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          line-height: 45px;
+        }
+
+      @media screen and (max-width: 480px) {
+        .resetpg-padding {
+          padding: 15px;
+        }
+
+        .resetpg-br {
+          display: none;
+        }
+      }
+    </style>
+<body>    
+<div class="bkgrnd-white padding dsktp-padding2 margin-v-top2">
+       <div class="">
+         <div class="t-middle dsktp-t-middle">
+          <div class="inline-block padding4 dsktp-padding2 resetpg-padding">
+           <h2 class="heading-large text-blue dsktp-t-middle t-middle padding margin-v-bottom" style='margin-bottom: 2rem'>Forgot Your Password?</h2>
+           <div class="base-text-size half-transparent">
+               <p class="heading-small">Enter the email address associated with your account, <br class='resetpg-br'>and we'll email you a link to reset your password.</p>
+           </div>
+
+             <br>
+            {{--Reset form--}}
+            <form method="post" action="forgotpassword">
+              <div>
+               <div class="dsktp-margin-v-bottom margin-v-bottom">
+               <label for="email"></label>
+                <input type="email" class="inline-block dsktp-four-fifths input-text default-radius resetpg-input" style='text-align: left' name="email" placeholder="Email address" autofocus>
+               </div>
+              </div>
+              {{--Reset button--}}
+              <div class="">
+                <div class="">
+                  <button class="inline-block margin-v-bottom2 dsktp-margin-v-bottom dsktp-padding--h button button-brand" style='width: 9rem' type="submit">Reset</button>
+                  <p class="base-text-size slightly-transparent">Just remembered? <a class="text-blue" href="login">Sign in</a> instead.</p>
+                </div>
+              </div>
+            </form>
+           </div>
+         </div>
+       </div>
+     </div>
+<script src='jquery.js'></script>
+<script src='js/bootstrap.js'></script>
+</body>
+</html>  

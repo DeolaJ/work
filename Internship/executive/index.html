@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Executive Page</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .mainbody {
+            float: right;
+        }
+
+        .sidebar{
+            float: left;
+            margin-top: 30px;
+        }
+
+        .sidebar-content {
+            text-align: justify;
+        }
+
+        .sidebar-content hr {
+            margin-top: 2px;
+            border-top: 2px solid rgb(140,140,140);
+            border-radius: 2px;
+            color: black;
+            margin-bottom: 14px;
+        }
+
+        .sidebar-content li {
+            list-style-type: none;
+        }
+
+        .sidebar-content a {
+            text-decoration: none;
+        }
+
+        .sidebar-menu {
+            margin-bottom: 20px;
+            padding: 0;
+        }
+
+        .sidebar-menu-head {
+            font-size: 18px;
+        }
+
+        .sidebar-menu a, #teama a, #teamb a {
+            color: black;
+        }
+
+        .sidebar-menu a:hover {
+            text-shadow: 1px 1px 1px rgb(50,50,50);
+        }
+
+        .header {
+            background-color: rgb(220,220,220);
+            padding: 10px;
+            box-shadow: 4px 2px 2px rgb(190,190,190);
+            margin-bottom: 15px;
+            margin-top: 10px;
+        }
+
+        .header span {
+            font-size: 14px;
+        }
+
+        .header h1 {
+            text-align: center;
+            margin: 0;
+        }
+
+        #header-wrapper {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        .headermenu {
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        .headermenu__list {
+            font-size: 17px;
+            width: 110px;
+            text-align: center;
+        }
+
+        .headermenu__list a {
+            text-decoration: none;
+            width: 100%;
+        }
+
+        .headermenu__list:hover {
+            box-shadow: 2px 2px 1px rgb(180,180,180);
+            color: black;
+        }
+
+        .content {
+            background-color: rgb(220,220,220);
+            padding: 10px;
+            box-shadow: 4px 2px 2px rgb(190,190,190);
+        }
+
+        .content-wrapper__button {
+            float: right;
+        }
+
+        .checkbox-list {
+            padding-left: 0;
+        }
+
+        .checkbox-list > li {
+            list-style-type: none;
+            font-size: 16px;
+        }
+
+        .checkbox-list li,
+        .checkbox-list ul li {
+          margin-bottom: 5px;
+          padding-top: 2px;
+          position: relative;
+        }
+         
+        .checkbox-list label,
+        .checkbox-list ul label {
+          display: block;
+          font-weight: normal;
+          padding-left: 21px;
+        }
+         
+        .checkbox-list input,
+        .checkbox-list ul input {
+          display: inline;
+          margin: 0 5px 0 -21px;
+          position: absolute;
+          top: 2px;
+        }
+         
+        .checkbox-list ul {
+          margin: 5px 0 0 20px;
+        }
+         
+        .checkbox-list p,
+        .checkbox-list ul p {
+          color: #808080;
+          padding-left: 21px;
+          margin: 0;
+        }
+
+        .checkbox-list_black {
+            color: black;
+        }
+
+        .checkbox-list_green {
+            color: rgb(30,245,30);
+        }
+
+        .checkbox-list_grey {
+            color: rgb(120,120,120);
+        }
+
+        .checkbox-list_bold {
+            font-weight: bold;
+        }
+
+        .icon-bar {
+            background-color: black;
+        }
+
+        @media screen and (max-width: 975px) {
+            .sidebar-content {
+                padding: 0;
+            }
+        } 
+
+       
+        
+
+        @media screen and (max-width: 550px) {
+            .headermenu__list {
+                width: 80px;
+            }
+
+            .header {
+                padding: 3px;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+                .sidebar-content {
+                    padding: 10px;
+                }
+
+              .row-offcanvas {
+                position: relative;
+                -webkit-transition: all 0.25s ease-out;
+                -moz-transition: all 0.25s ease-out;
+                transition: all 0.25s ease-out;
+              }
+
+              .row-offcanvas-right
+              .sidebar-offcanvas {
+                right: -41.6%;
+              }
+
+              .row-offcanvas-left
+              .sidebar-offcanvas {
+                left: -41.6%;
+              }
+
+              .row-offcanvas-right.active {
+                right: 41.6%;
+              }
+
+              .row-offcanvas-left.active {
+                left: 41.6%;
+              }
+
+              .sidebar-offcanvas {
+                position: absolute;
+                top: 0;
+                width: 41.6%;
+              }
+
+              #sidebar {
+                padding-top:0;
+              }
+            }
+
+
+    </style>
+<body>
+    <div class='container-fluid'>
+        <div class='row row-offcanvas row-offcanvas-left'>
+            <div class='sidebar col-lg-4 col-md-3 col-sm-3 col-xs-6 sidebar-offcanvas' id='sidebar'>
+                <div class='container-fluid sidebar-content'><span class="sr-only">(current)</span>
+                    <ul class='sidebar-menu'>
+                        <li class='sidebar-menu-head'>Reports</li>
+                        <hr>
+                        <li>Team B completed a task</li>
+                        <li>SportLight project created</li>
+                        <li>Hotels.ng archived</li>
+                    </ul>
+                    <ul class='sidebar-menu'>
+                        <li class='sidebar-menu-head'>Teams<span></span></li>
+                        <hr>
+                        <li class="active">
+                          <a href="#teama" data-toggle="collapse" role="button" aria-haspopup="true" aria-expanded="true"><span class="caret"></span> Team A</a>
+                            <ul class="collapse in" id='teama'>
+                                <li><a href=''>Team Resources</a></li>
+                                <li><a href=''>Team Calendar</a></li>
+                                <li><a href=''>PROJECTS <span></span></a></li>
+                                <li><a href=''>Factory</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href=''>Hotels.ng</a></li> 
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#teamb" data-toggle="collapse" role="button" aria-haspopup="true" aria-expanded="true"><span class="caret"></span> Team B</a>
+                            <ul class="collapse in" id='teamb'>
+                                <li><a href=''>Team Resources</a></li>
+                                <li><a href=''>Team Calendar</a></li>
+                                <li><a href=''>PROJECTS <span></span></a></li>
+                                <li><a href=''>hng</a></li>
+                                <li><a href=''>Sportlight</a></li> 
+                            </ul>
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>    
+                    <ul class='sidebar-menu'>    
+                        <li class='sidebar-menu-head'>Archived Projects</li>
+                    </ul>
+                </div>
+            </div>
+            <div class='mainbody col-lg-8 col-md-9 col-sm-9 col-xs-12'>
+                <div class='header'>
+                    <div class='container-fluid' id='header-wrapper'>
+                        <div class='hidden-lg hidden-md visible-sm visible-xs'>
+                            <button type="button" id='togglebutton' class="navbar-toggle collapsed btn-primary pull-left" data-toggle="offcanvas" data-target=".sidebar-nav" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <h1><span class='glyphicon glyphicon-star'></span>Factory</h1>
+                        <br><br>
+                        <div class='row'>
+                            <ul class='col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 list-inline headermenu'>
+                                <li class='headermenu__list active'><a href='#'>List</a></li>
+                                <li class='headermenu__list'><a href='#'>Calendar</a></li>
+                                <li class='headermenu__list'><a href='#'>Progress</a></li>
+                                <li class='headermenu__list'><a href='#'>Files</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class='content'>
+                    <div class='container-fluid'>
+                        <div class='content-wrappper'>
+                            <button class='btn btn-md content-wrapper__button'>Add task</button>
+                            <br>
+                            <div class='clearfix'></div>
+                            <br>
+                            <ul class='checkbox-list'>
+                                <li>
+                                    <label for="item01">
+                                        <input type="checkbox" id="item01" name="item1"><b>Do Wireframe</b><span class='pull-right checkbox-list_grey'>Tomorrow <span class='checkbox-list_black checkbox-list_bold'>John</span></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="item02">
+                                        <input type="checkbox" id="item02" name="item2"><b>Do Wireframe</b><span class='pull-right checkbox-list_grey'>Feb 14 <span class='checkbox-list_black checkbox-list_bold'>Shadrach</span></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="item03">
+                                        <input type="checkbox" id="item03" name="item3"><b>Do Wireframe</b><span class='pull-right checkbox-list_grey'>June 2 <span class='checkbox-list_black checkbox-list_bold'>Olubukola</span></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="item04">
+                                        <input type="checkbox" id="item04" name="item4"><b>Design logo for IOS</b><span class='pull-right checkbox-list_green'>Tuesday <span class='checkbox-list_black checkbox-list_bold'>Tolu</span></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="item05">
+                                        <input type="checkbox" id="item05" name="item5"><b>Design logo for Android</b><span class='pull-right checkbox-list_green'>Tuesday <span class='checkbox-list_black checkbox-list_bold'>Tolu</span></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="item06">
+                                        <input type="checkbox" id="item06" name="item6"><b>Do Wireframe</b><span class='pull-right checkbox-list_green'>Tomorrow <span class='checkbox-list_black checkbox-list_bold'>John</span></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+<script src='jquery.js'></script>
+<script src='js/bootstrap.js'></script>
+<script>
+    $(document).ready(function() {
+  $('[data-toggle=offcanvas]').click(function() {
+    $('.row-offcanvas').toggleClass('active');
+  });
+});
+</script>
+</body>
+</html>    

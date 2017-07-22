@@ -1,0 +1,90 @@
+
+
+/******* BACKROUND COLORS ***********/
+.bkgrnd-white {
+
+    background-color: #fff
+}
+
+.bkgrnd-light-grey {
+
+    background-color: #e1e1e1
+}
+
+.bkgrnd-blue {
+
+    background-color: #3d9ee3
+}
+
+.bkgrnd-yellow {
+
+    background-color: #f9b202
+}
+
+.bkgrnd-green {
+
+    background-color: #64c073
+}
+
+.bkgrnd-light-blue {
+
+    background-color: #b3d4fc
+}
+
+.bkgrnd-grey {
+
+    background-color: #d8d8d8
+}
+
+.bkgrnd-dark {
+
+    background-color: #404040
+}
+
+
+
+/******* TEXT COLORS ***********/
+
+.text-white {
+
+    color: #fff
+}
+
+.text-light-grey {
+
+    color: #e1e1e1
+}
+
+.text-dark-grey {
+    color: #b9b6b6;
+}
+
+.text-blue {
+
+    color: #3d9ee3
+}
+
+.text-yellow {
+
+    color: #f9b202
+}
+
+.text-green {
+
+    color: #64c073
+}
+
+.text-light-blue {
+
+    color: #b3d4fc
+}
+
+.text-grey {
+
+    color: #d8d8d8
+}
+
+.text-dark {
+
+    color: #404040
+}

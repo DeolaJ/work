@@ -1,0 +1,190 @@
+body {
+	font-family: Arial;
+	font-size: 1em;
+}
+
+header {
+	background-color: #34D800;
+}
+
+
+#topmenu {
+	float: right;
+}
+
+#logoname {
+	color: rgb(0,136,68);
+}
+
+.well {
+	width: 70%;
+}
+
+.column h1 {
+	font-size: 1.3em;
+}
+
+.navbar-default {
+	background-color: white;
+}
+
+header {
+	margin-bottom : 0;
+}
+
+#topmenubutton {
+	color: blue !important;
+	background-color: rgb(0,170,85);
+}
+
+#thecarousel {
+	margin-top: 51px;
+}
+
+.carousel-inner {
+	margin: 0 auto;
+}
+
+
+
+#left-pane {
+	margin-left: 20px;
+}
+
+.tab-content {
+	width: 75%;
+}
+
+#tab1, #tab2 {
+	
+	padding: 10px;
+}
+
+
+footer {
+	width: 100%;
+	background-color: rgb(190,190,109);
+	margin: 0 auto;
+	vertical-align: baseline;
+}
+
+footer p {
+	text-align: center;
+	font-size: 14px;
+	line-height: 50px;
+	background-color: rgb(140,140,55);
+	height: 50px;
+	margin: 0;
+	text-shadow: 1px 1px 1px rgb(50,50,50);
+}
+
+div.foot {
+	width: 100%;
+}
+
+.foot1 {
+	width: 30%;
+	padding: 35px;
+
+}
+
+.foot1 h4 {
+	margin-bottom: 0;
+	text-rendering: optimizeSpeed;
+	letter-spacing: 0px;
+}
+
+.foot1 ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.foot1 a {
+	text-decoration: none;
+	font-size: 11px;
+	margin: 0;
+}
+
+.foot1 hr {
+	margin-top: 5px;
+
+}
+
+.foot1 input {
+	width: 190px;
+	height: 30px;
+	font-size: 15px;
+}
+
+#social {
+	margin-left: 15px;
+	list-style-type: none;
+
+}
+
+#social li {
+	margin: 0;
+	padding: 0;
+}
+
+#social li a {
+	font-size: 15px;
+}
+
+
+@media only screen and (min-width: 979px) {
+			#tab1, #tab2 {
+				height: 290px;
+				width: 276px;
+			}
+	
+}
+
+
+@media only screen and (max-width: 650px) {
+			.column h1 {
+				background-color: rgb(180,180,180);
+				width: 100%;
+				padding: 10px;
+			}
+			.well {
+				width: 100%;
+			}
+			.foot1 {
+				width: 100%;
+			}	
+			.tab-content {
+				width: 100%;
+			}	
+			.tab-content #tab1 img {
+				height: 100px;
+				width: 85px;
+			}
+			.tab-content #tab2 img {
+				height: 60px;
+				width: 85px;
+			}
+			#tab1,#tab2 {
+				height: 230px;
+				width: 180px;
+
+			}
+			#tab1 h4,#tab2 h4 {
+				font-size: 14px;
+			}
+}
+
+@media only screen and (min-width: 650px) and (max-width: 979px) {
+
+			.tab-content img {
+				height: 125px;
+				width: 110px;
+			}
+}
+
+@media only screen and (max-width: 500px) {
+			.carousel-inner img{
+				width: 500px;
+				height: auto;
+}

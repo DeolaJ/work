@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+        <link rel="stylesheet" href="css/basic.style.css" type="text/css"/>
+        <link rel="stylesheet" href="css/custom.css" type="text/css"/>
+    </head>
+    <style>
+      .login-bg {
+        background-image: url(map.png) !important;
+      }
+
+      .login-heading {
+        font-size: 20px;
+      }
+      
+      .login-checkbox {
+        line-height: 20px;
+      }
+
+      .login-checkbox {
+        line-height: 20px;
+      }
+
+      .login-box-inside {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      .login-input {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        line-height: 45px;
+      }
+
+      .login-input-opaq {
+        opacity: 1;
+      }
+
+      .login-input-button {
+        padding: 10px;
+      }
+
+      @media screen and (min-width: 1020px) {
+        .login-box-container {
+          width: 35%;
+          float: right;
+        } 
+      }
+
+      @media screen and (min-width: 860px) {  
+        .login-box-container {
+          width: 45%;
+          float: right;
+        }
+      }
+
+      @media screen and (min-width: 769px) {  
+        .login-box-container {
+          width: 50%;
+          float: right;
+        }
+      }
+
+      @media screen and (min-width: 769px) and (max-width: 950px) {  
+        .login-text-quest {
+          font-size: 32px;
+        }
+      }
+    </style>
+<body>
+<div class='login-bg'>    
+<div class="smallborder-top dsktp-full-viewport-height dsktp-padding4 login-wrapper relative t-middle" >
+       <div class="dsktp-absolute-top-left dsktp-one-whole dsktp-full-height"></div>
+       <!-- <div class="dsktp-absolute-top-left dsktp-one-whole dsktp-full-height bkgrnd-dark slightly-transparent"></div> -->
+       <div class=" dsktp-full-height dsktp-one-whole relative content">
+           <!-- <div class="dsktp-absolute-top-left dsktp-one-half dsktp-full-height bkgrnd-white nearly-transparent"></div> -->
+           <div class=" dsktp-absolute-center dsktp-one-whole dsktp-full-height vertical-align-top dsktp-inline-blks-container dsktp-padding-h4">
+               <div class=" text-white inline-block dsktp-one-half dsktp-full-height dsktp-o-hidden o-hidden relative" >
+                   <div class="absolute-top-left dsktp-absolute-top-left one-whole dsktp-one-whole full-height dsktp-full-height signin-bg-image"></div>
+                   <div class="absolute-top-left dsktp-absolute-top-left one-whole dsktp-one-whole full-height dsktp-full-height"></div>
+                   <div class="dsktp-absolute-center dsktp-padding-h-right4 padding-h4 padding-v2 dsktp-padding-v4 dsktp-two-thirds dsktp-t-middle">
+                       <h2 class="dsktp-padding-v-bottom2 margin-v-bottom dsktp-type-large text-dark bold login-text-quest" style='color: #404040'>Don't have an account?</h2>
+
+                       <a href="/signup" class="inline-block button button-brand">Sign Up</a>
+                   </div>
+               </div>
+               <div class="bkgrnd-white dsktp-full-height padding4 padding-v2 inline-block one-whole dsktp-t-middle relative login-box-container" id='login_div'>
+                   <div class="login-box-inside dsktp-absolute-center dsktp-one-whole dsktp-t-middle">
+                       <div class="inline-block one-whole dsktp-four-fifths ">
+                           <div class="login-heading padding-v-bottom dsktp-margin-v-bottom2 bold text-blue" style='text-align: left'>LOGIN</div>
+                           <form action="/login" method="POST" class="">
+                           <div class="padding-v-bottom">
+                               <div class="dsktp-margin-v-bottom1">
+                                   <div class="dsktp-margin-v-bottom margin-v-bottom">
+                                       <input type="text" name="email" placeholder="Enter your email" class="bkgrnd-white inline-block one-whole dsktp-one-whole input-text smallborder default-radius login-input" style="text-align:left" required="true">
+
+                                   </div>
+                                   <div class="dsktp-margin-v-bottom margin-v-bottom">
+                                       <input type="password" name="password" placeholder="Enter your password" class="bkgrnd-white inline-block one-whole dsktp-one-whole input-text smallborder default-radius login-input" style="text-align:left" required="true">
+                                   </div>
+                               </div>
+                               <div class="dsktp-padding-v-bottom05 ">
+
+                                   <div style='text-align: left'>
+                                      <span class='inline-block dsktp-padding-v-bottom padding-v-bottom base-text-size-small thin login-input-opaq login-checkbox'><span style='position: relative; top: 3px'><input type="checkbox" id="remember" name="" value=""></span><label style='color: #404040' for="remember">&nbsp;Remember me</label></span><br/>
+                                   </div>
+
+                                   <button type="submit" name="login" class="inline-block one-whole dsktp-one-whole button button-brand login-input-button login-input-opaq">Log in</button>
+                               </div>
+                           </div>
+                           </form>
+                           <div class="dsktp-margin-v-bottom2 margin-v-bottom2">
+                               <span class="inline-block half-transparent dsktp-margin-v-top2 margin-v-top dsktp-margin-v-bottom2 margin-v-bottom2">or log in with</span>
+                               <ul class="dsktp-inline-blks-container">
+                                   <li class="inline-block dsktp-margin-h">
+                                       <a href="sociallogin" class="inline-block circle relative login-facebook-icon icon-small-size bkgrnd-white" style='border-color: #404040'>
+                                           <span class="absolute-center dsktp-absolute-center icon-ion-social-facebook"></span>
+                                       </a>
+                                   </li>
+                                   <li class="inline-block margin-h dsktp-margin-h">
+                                       <a href="#" class="inline-block circle relative login-google-icon icon-small-size bkgrnd-white" style='border-color: #404040'>
+                                           <span class="absolute-center dsktp-absolute-center icon-ion-social-google"></span>
+                                       </a>
+                                   </li>
+                                   <li class="inline-block dsktp-margin-h">
+                                       <a href="" class="inline-block circle relative login-twitter-icon icon-small-size bkgrnd-white"  style='border-color: #404040'>
+                                           <span class="absolute-center dsktp-absolute-center icon-ion-social-twitter"></span>
+                                       </a>
+                                   </li>
+                               </ul>
+                           </div>
+
+                           <span class="smallborder-bottom text-green"><a href='/forgotpassword'>Forgot Password</a></span>
+                       </div>
+
+
+
+                   </div>
+               </div>
+
+           </div>
+
+
+
+       </div>
+   </div>
+   </div>
+<script src='jquery.js'></script>
+<script src='js/bootstrap.js'></script>
+ <script type="text/javascript">
+      function hide_1()
+      {
+        document.getElementById("login_div").style.display="none";
+        document.getElementById("register_div").style.display="inline-block";
+      }
+      function hide_2()
+      {
+        document.getElementById("login_div").style.display="inline-block";
+        document.getElementById("register_div").style.display="none";
+      }
+
+function facebookLogin() {
+    var FB = window.FB;
+    var scopes = 'email';
+
+    FB.login(function(response) {
+      if (response.status === 'connected') {
+        console.log('The user has logged in!');
+        FB.api('/me', function(response) {
+          window.location = "http://dev.factory.zone/dashboard";
+        });
+      }
+    }, { scope: scopes });
+  }
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1626502864090375',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v1.0'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+function checkLoginState() {
+
+
+  FB.getLoginStatus(function(response) {
+  //    statusChangeCallback(response);
+
+  alert(response);
+
+  });
+}
+    </script>
+</body>
+</html>  

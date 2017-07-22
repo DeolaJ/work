@@ -1,0 +1,750 @@
+
+
+
+
+
+
+/*A padding or margin class without 'h05', 'h', 'h2', 'h4' or 'v05', 'v', 'v2', 'v4' at the end of the class means you are applying padding/margin to every side of the element.
+
+padding/margin classes that end in 'h' with or without another number at the end means you are applying paddings/margins to the left and right only, same as 'v' which means you are appying padding/margin to the top and bottom only. Example: .padding-h, .dsktp-padding--h, .dsktp-padding--h2, .padding-v
+
+padding/margin classes that end with a direction, e.g .padding-h-right, .dsktp-padding-h-left2, .padding-v-top means you are only padding that direction
+
+EXAMPLE:
+    <div class="padding2"></div>
+
+    is the same as writing
+
+    div {
+        padding: 2rem;
+    }
+
+    ----------------------------------------------------------
+
+    You can for example create a custom button (but don't o-o) with
+
+    <button class="padding-h padding-v05 dsktp-padding--h dsktp-padding--v05">
+
+    same as writing
+
+    @media (max-width: 768px) {
+        button {
+            padding: 1rem 0.5rem;
+        }
+    }
+
+    @media and (min-width: 769px) {
+        button {
+            padding: 1rem 0.5rem;
+        }
+    }
+
+
+    Don't do this - the dsktp-one-half divs won't stay side-by-side
+
+        <div class="inline-blks-container">
+            <div class="inline-block margin-h dsktp-one-half">
+                content
+            </div>
+            <div class="inline-block margin-h dsktp-one-half">
+                content
+            </div>
+        </div>
+
+
+    instead do - the dsktp-one-half divs would stay side-by-side
+
+        <div class="inline-blks-container">
+            <div class="inline-block padding-h dsktp-one-half">
+                <div> Content </div>
+            </div>
+            <div class="inline-block padding-h dsktp-one-half">
+                <div> Content </div>
+            </div>
+        </div>
+
+
+    **Please note that all padding/margin are in increment of the base rem. Paddings/Margins without any number at the end are 1rem, those with '2' at the end are 2rem, those with '05' are 0.5rem, those with '4' at the end are 4rem
+ */
+
+
+
+@media (max-width: 768px) {
+
+    .padding {
+
+        padding: 1rem
+    }
+
+    .padding05 {
+
+        padding: 0.5rem
+    }
+
+    .padding2 {
+
+        padding: 2rem
+    }
+
+    .padding4 {
+
+        padding: 4rem
+    }
+
+    .padding-h05 {
+
+        padding-left: 0.5rem
+    }
+
+    .padding-h05 {
+
+        padding-right: 0.5rem
+    }
+
+    .padding-h {
+
+        padding-left: 1rem
+    }
+
+    .padding-h {
+
+        padding-right: 1rem
+    }
+
+    .padding-h2 {
+
+        padding-left: 2rem
+    }
+
+    .padding-h2 {
+
+        padding-right: 2rem
+    }
+
+    .padding-h4 {
+
+        padding-left: 4rem
+    }
+
+    .padding-h4 {
+
+        padding-right: 4rem
+    }
+
+    .padding-v05 {
+
+        padding-top: 0.5rem
+    }
+
+    .padding-v05 {
+
+        padding-bottom: 0.5rem
+    }
+
+    .padding-v {
+
+        padding-top: 1rem
+    }
+
+    .padding-v {
+
+        padding-bottom: 1rem
+    }
+
+    .padding-v2 {
+
+        padding-top: 2rem
+    }
+
+    .padding-v2 {
+
+        padding-bottom: 2rem
+    }
+
+    .padding-v4 {
+
+        padding-top: 4rem
+    }
+
+    .padding-v4 {
+
+        padding-bottom: 4rem
+    }
+
+    .padding-h-right {
+
+        padding-right: 1rem
+    }
+
+    .padding-h-right2 {
+
+        padding-right: 2rem
+    }
+
+    .padding-h-right4 {
+
+        padding-right: 4rem
+    }
+
+    .padding-h-left {
+
+        padding-left: 1rem
+    }
+
+    .padding-h-left2 {
+
+        padding-left: 2rem
+    }
+
+    .padding-h-left4 {
+
+        padding-left: 4rem
+    }
+
+    .padding-v-bottom05 {
+
+        padding-bottom: 0.5rem
+    }
+
+    .padding-v-bottom {
+
+        padding-bottom: 1rem
+    }
+
+    .padding-v-bottom2 {
+
+        padding-bottom: 2rem
+    }
+
+    .padding-v-bottom4 {
+
+        padding-bottom: 4rem
+    }
+
+    .padding-v-top05 {
+
+        padding-top: 0.5rem
+    }
+
+    .padding-v-top {
+
+        padding-top: 1rem
+    }
+
+    .padding-v-top2 {
+
+        padding-top: 2rem
+    }
+
+    .padding-v-top4 {
+
+        padding-top: 4rem
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .margin {
+
+        margin: 1rem
+    }
+
+    .margin2 {
+
+        margin: 2rem
+    }
+
+    .margin4 {
+
+        margin: 4rem
+    }
+
+    .margin-h {
+
+        margin-left: 1rem
+    }
+
+    .margin-h {
+
+        margin-right: 1rem
+    }
+
+    .margin-h2 {
+
+        margin-left: 2rem
+    }
+
+    .margin-h2 {
+
+        margin-right: 2rem
+    }
+
+    .margin-h4 {
+
+        margin-left: 4rem
+    }
+
+    .margin-h4 {
+
+        margin-right: 4rem
+    }
+
+    .margin-v {
+
+        margin-top: 1rem
+    }
+
+    .margin-v {
+
+        margin-bottom: 1rem
+    }
+
+    .margin-v2 {
+
+        margin-top: 2rem
+    }
+
+    .margin-v2 {
+
+        margin-bottom: 2rem
+    }
+
+    .margin-v4 {
+
+        margin-top: 4rem
+    }
+
+    .margin-v4 {
+
+        margin-bottom: 4rem
+    }
+
+    .margin-h-right {
+
+        margin-right: 1rem
+    }
+
+    .margin-h-right2 {
+
+        margin-right: 2rem
+    }
+
+    .margin-h-right4 {
+
+        margin-right: 4rem
+    }
+
+    .margin-h-left {
+
+        margin-left: 1rem
+    }
+
+    .margin-h-left2 {
+
+        margin-left: 2rem
+    }
+
+    .margin-h-left4 {
+
+        margin-left: 4rem
+    }
+
+    .margin-v-bottom {
+
+        margin-bottom: 1rem
+    }
+
+    .margin-v-bottom2 {
+
+        margin-bottom: 2rem
+    }
+
+    .margin-v-bottom4 {
+
+        margin-bottom: 4rem
+    }
+
+    .margin-v-top {
+
+        margin-top: 1rem
+    }
+
+    .margin-v-top2 {
+
+        margin-top: 2rem
+    }
+
+    .margin-v-top4 {
+
+        margin-top: 4rem
+    }
+
+}
+
+
+@media (min-width: 769px) {
+
+    .dsktp-padding {
+
+        padding: 1rem
+    }
+
+    .dsktp-padding05 {
+
+        padding: 0.5rem
+    }
+
+    .dsktp-padding2 {
+
+        padding: 2rem
+    }
+
+    .dsktp-padding4 {
+
+        padding: 4rem
+    }
+
+    .dsktp-padding-h05 {
+
+        padding-left: 0.5rem
+    }
+
+    .dsktp-padding-h05 {
+
+        padding-right: 0.5rem
+    }
+
+    .dsktp-padding-h {
+
+        padding-left: 1rem
+    }
+
+    .dsktp-padding-h {
+
+        padding-right: 1rem
+    }
+
+    .dsktp-padding-h2 {
+
+        padding-left: 2rem
+    }
+
+    .dsktp-padding-h2 {
+
+        padding-right: 2rem
+    }
+
+    .dsktp-padding-h4 {
+
+        padding-left: 4rem
+    }
+
+    .dsktp-padding-h4 {
+
+        padding-right: 4rem
+    }
+
+    .dsktp-padding-h6 {
+
+        padding-left: 6rem
+    }
+
+    .dsktp-padding-h6 {
+
+        padding-right: 6rem
+    }
+
+    .dsktp-padding-v05 {
+
+        padding-top: 0.5rem
+    }
+
+    .dsktp-padding-v05 {
+
+        padding-bottom: 0.5rem
+    }
+
+    .dsktp-padding-v {
+
+        padding-top: 1rem
+    }
+
+    .dsktp-padding-v {
+
+        padding-bottom: 1rem
+    }
+
+    .dsktp-padding-v2 {
+
+        padding-top: 2rem
+    }
+
+    .dsktp-padding-v2 {
+
+        padding-bottom: 2rem
+    }
+
+    .dsktp-padding-v4 {
+
+        padding-top: 4rem
+    }
+
+    .dsktp-padding-v4 {
+
+        padding-bottom: 4rem
+    }
+
+    .dsktp-padding-h-right05 {
+
+        padding-right: 0.5rem
+    }
+
+    .dsktp-padding-h-right {
+
+        padding-right: 1rem
+    }
+
+    .dsktp-padding-h-right2 {
+
+        padding-right: 2rem
+    }
+
+    .dsktp-padding-h-right4 {
+
+        padding-right: 4rem
+    }
+
+    .dsktp-padding-h-left {
+
+        padding-left: 1rem
+    }
+
+    .dsktp-padding-h-left2 {
+
+        padding-left: 2rem
+    }
+
+    .dsktp-padding-h-left4 {
+
+        padding-left: 4rem
+    }
+
+    .dsktp-padding-v-bottom05 {
+
+        padding-bottom: 0.5rem
+    }
+
+    .dsktp-padding-v-bottom {
+
+        padding-bottom: 1rem
+    }
+
+    .dsktp-padding-v-bottom2 {
+
+        padding-bottom: 2rem
+    }
+
+    .dsktp-padding-v-bottom4 {
+
+        padding-bottom: 4rem
+    }
+
+    .dsktp-padding-v-top05 {
+
+        padding-top: 0.5rem
+    }
+
+    .dsktp-padding-v-top {
+
+        padding-top: 1rem
+    }
+
+    .dsktp-padding-v-top2 {
+
+        padding-top: 2rem
+    }
+
+    .dsktp-padding-v-top4 {
+
+        padding-top: 4rem
+    }
+
+    .dsktp-margin {
+
+        margin: 1rem
+    }
+
+    .dsktp-margin2 {
+
+        margin: 2rem
+    }
+
+    .dsktp-margin4 {
+
+        margin: 4rem
+    }
+
+    .dsktp-margin-h05 {
+
+        margin-left: 0.5rem
+    }
+
+    .dsktp-margin-h05 {
+
+        margin-right: 0.5rem
+    }
+
+    .dsktp-margin-h {
+
+        margin-left: 1rem
+    }
+
+    .dsktp-margin-h {
+
+        margin-right: 1rem
+    }
+
+    .dsktp-margin-h2 {
+
+        margin-left: 2rem
+    }
+
+    .dsktp-margin-h2 {
+
+        margin-right: 2rem
+    }
+
+    .dsktp-margin-h4 {
+
+        margin-left: 4rem
+    }
+
+    .dsktp-margin-h4 {
+
+        margin-right: 4rem
+    }
+
+    .dsktp-margin-v05 {
+
+        margin-top: 0.5rem
+    }
+
+    .dsktp-margin-v05 {
+
+        margin-bottom: 0.5rem
+    }
+
+    .dsktp-margin-v {
+
+        margin-top: 1rem
+    }
+
+    .dsktp-margin-v {
+
+        margin-bottom: 1rem
+    }
+
+    .dsktp-margin-v2 {
+
+        margin-top: 2rem
+    }
+
+    .dsktp-margin-v2 {
+
+        margin-bottom: 2rem
+    }
+
+    .dsktp-margin-v4 {
+
+        margin-top: 4rem
+    }
+
+    .dsktp-margin-v4 {
+
+        margin-bottom: 4rem
+    }
+
+    .dsktp-margin-v6 {
+
+        margin-top: 6rem
+    }
+
+    .dsktp-margin-v6 {
+
+        margin-bottom: 6rem
+    }
+
+    .dsktp-margin-h-right {
+
+        margin-right: 1rem
+    }
+
+    .dsktp-margin-h-right2 {
+
+        margin-right: 2rem
+    }
+
+    .dsktp-margin-h-right4 {
+
+        margin-right: 4rem
+    }
+
+    .dsktp-margin-h-left {
+
+        margin-left: 1rem
+    }
+
+    .dsktp-margin-h-left2 {
+
+        margin-left: 2rem
+    }
+
+    .dsktp-margin-h-left4 {
+
+        margin-left: 4rem
+    }
+
+    .dsktp-margin-v4 {
+
+        margin-bottom: 4rem
+    }
+
+    .dsktp-margin-v-bottom {
+
+        margin-bottom: 1rem
+    }
+
+    .dsktp-margin-v-bottom2 {
+
+        margin-bottom: 2rem
+    }
+
+    .dsktp-margin-v-bottom4 {
+
+        margin-bottom: 4rem
+    }
+
+    .dsktp-margin-v-top {
+
+        margin-top: 1rem
+    }
+
+    .dsktp-margin-v-top2 {
+
+        margin-top: 2rem
+    }
+
+    .dsktp-margin-v-top4 {
+
+        margin-top: 4rem
+    }
+
+
+    .dsktp-margin-v-top6 {
+
+        margin-top: 6rem
+    }
+
+}

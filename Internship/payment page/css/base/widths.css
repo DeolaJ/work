@@ -1,0 +1,248 @@
+
+
+@media (max-width: 768px) {
+
+    .one-whole {
+
+        width: 100%
+    }
+
+    .one-half {
+
+        width: 50%
+    }
+
+    .one-third {
+
+        width: 33.3333%
+    }
+
+    .two-thirds {
+
+        width: 66.6667%
+    }
+
+    .one-quarter {
+
+        width: 25%
+    }
+
+    .three-quarters {
+
+        width: 75%
+    }
+
+    .one-fifth {
+
+        width: 20%
+    }
+
+    .two-fifths {
+
+        width: 40%
+    }
+
+    .three-fifths {
+
+        width: 60%
+    }
+
+    .four-fifths {
+
+        width: 80%
+    }
+
+    .one-sixth {
+
+        width: 16.6667%
+    }
+
+    .five-sixths {
+
+        width: 83.3333%
+    }
+
+    .one-eighth {
+
+        width: 12.5%
+    }
+
+    .three-eighths {
+
+        width: 37.5%
+    }
+
+    .five-eigths {
+
+        width: 62.5%
+    }
+
+    .seven-eights {
+
+        width: 87.5%
+    }
+
+    .one-tenth {
+
+        width: 10%
+    }
+
+    .three-tenths {
+
+        width: 30%
+    }
+
+    .seven-tenths {
+
+        width: 70%
+    }
+
+    .nine-tenths {
+
+        width: 90%
+    }
+
+    .one-twelfth {
+
+        width: 8.3333%
+    }
+
+    .five-twelths {
+
+        width: 41.6667%
+    }
+
+    .seven-twelfths {
+
+        width: 58.3333%
+    }
+
+    .eleven-twelfths {
+
+        width: 91.6667%
+    }
+}
+
+
+@media (min-width: 769px) {
+
+    .dsktp-one-whole {
+
+        width: 100%
+    }
+
+    .dsktp-one-half {
+
+        width: 50%
+    }
+
+    .dsktp-one-third {
+
+        width: 33.3333%
+    }
+
+    .dsktp-two-thirds {
+
+        width: 66.6667%
+    }
+
+    .dsktp-one-quarter {
+
+        width: 25%
+    }
+
+    .dsktp-three-quarters {
+
+        width: 75%
+    }
+
+    .dsktp-one-fifth {
+
+        width: 20%
+    }
+
+    .dsktp-two-fifths {
+
+        width: 40%
+    }
+
+    .dsktp-three-fifths {
+
+        width: 60%
+    }
+
+    .dsktp-four-fifths {
+
+        width: 80%
+    }
+
+    .dsktp-one-sixth {
+
+        width: 16.6667%
+    }
+
+    .dsktp-five-sixths {
+
+        width: 83.3333%
+    }
+
+    .dsktp-one-eighth {
+
+        width: 12.5%
+    }
+
+    .dsktp-three-eighths {
+
+        width: 37.5%
+    }
+
+    .dsktp-five-eigths {
+
+        width: 62.5%
+    }
+
+    .dsktp-seven-eights {
+
+        width: 87.5%
+    }
+
+    .dsktp-one-tenth {
+
+        width: 10%
+    }
+
+    .dsktp-three-tenths {
+
+        width: 30%
+    }
+
+    .dsktp-seven-tenths {
+
+        width: 70%
+    }
+
+    .dsktp-nine-tenths {
+
+        width: 90%
+    }
+
+    .dsktp-one-twelfth {
+
+        width: 8.3333%
+    }
+
+    .dsktp-five-twelfths {
+
+        width: 41.6667%
+    }
+
+    .dsktp-seven-twelfths {
+
+        width: 58.3333%
+    }
+
+    .dsktp-eleven-twelfths {
+
+        width: 91.6667%
+    }
+}

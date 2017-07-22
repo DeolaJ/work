@@ -1,0 +1,287 @@
+
+
+
+
+
+/*********** TEXT SIZES **********/
+
+.heading-large {
+
+    font-size: 2rem;
+}
+
+.heading-medium {
+
+    font-size: 1.4286rem
+}
+
+.heading-small {
+
+    font-size: 1.1429rem
+}
+
+.heading-label {
+
+    font-size: 0.8571rem
+}
+
+.base-text-size {
+
+    font-size: 1rem
+}
+
+.base-text-size-small {
+
+    font-size: 0.8571rem
+}
+
+
+
+/* HEADINGS FONT */
+
+h1, h2, h3, h4, h5, h6, .header-font {
+
+    font-family: "ChronicaPro-Regular", sans-serif;
+}
+
+
+
+/********** ICON SIZES **********/
+.icon-medium-size {
+
+    font-size: 2rem
+}
+
+.icon-normal-size {
+
+    font-size: 1.4286rem
+}
+
+.icon-small-size {
+
+    font-size: 1.1429rem
+}
+
+
+
+
+/**********  ROOT TYPOGRAPHY SETTINGS  **********/
+
+html, body {
+
+    font-family: "Graphik-Regular", sans-serif;
+
+    font-size: 12px;
+
+    /*font-size: calc(8px + 4 * ((100vw - 768px) / 1440));*/
+
+    font-weight: 400;
+
+    font-style: normal
+}
+
+@media (min-width: 769px) {
+
+    html, body {
+
+        font-size: 14px;
+
+        /*font-size: calc(10px + 4 * ((100vw - 768px) / 1440));*/
+    }
+}
+
+
+
+
+
+/*********** HELPER TYPOGRAPHY CLASSES *********/
+
+
+.uppercase {
+
+    text-transform: uppercase
+}
+
+.capitalize {
+
+    text-transform: capitalize
+}
+
+.bold {
+
+    font-weight: 700
+}
+
+.medium {
+
+    font-weight: 500
+}
+
+.normalweight {
+
+    font-weight: 400
+}
+
+.slim {
+
+    font-weight: 200
+}
+
+.thin {
+
+    font-weight: 100
+}
+
+.wide-spacing {
+
+    letter-spacing: 2px
+}
+
+.medium-spacing {
+
+    letter-spacing: 1.6px;
+
+    word-spacing: 0.125em
+}
+
+.small-spacing {
+
+    letter-spacing: 1.2px
+}
+
+.neg-spacing {
+
+    letter-spacing: -0.2px
+}
+
+.line-height-small {
+
+    line-height: 1.2
+}
+
+.line-height-medium {
+
+    line-height: 1.6
+}
+
+.line-height-large {
+
+    line-height: 2
+}
+
+
+
+
+
+
+
+/*** Everything below, use only when those above are not sufficient ***/
+
+@media (max-width: 768px) {
+    .type-very-large {
+
+        font-size: 4rem;
+
+    }
+
+    .type-large {
+
+        font-size: 3.2rem;
+    }
+
+    .type-moremedium {
+
+        font-size: 2.4rem;
+
+    }
+
+    .type-medium {
+
+        font-size: 1.7rem;
+
+    }
+
+    .type-normal {
+
+        font-size: 1.3rem;
+
+    }
+
+    .type-small {
+
+        font-size: 1rem;
+
+    }
+
+    .type-very-small {
+
+        font-size: 0.8rem;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 769px) {
+    .dsktp-type-extra-large {
+
+        font-size: 8rem;
+
+    }
+
+
+    .dsktp-type-very-large {
+
+        font-size: 5rem;
+
+    }
+
+    .dsktp-type-large {
+
+        font-size: 3.4rem;
+
+    }
+
+    .dsktp-type-low-large {
+
+        font-size: 2.6rem;
+
+    }
+
+    .dsktp-type-moremedium {
+
+        font-size: 1.8rem;
+
+    }
+
+    .dsktp-type-medium {
+
+        font-size: 1.4rem;
+
+    }
+
+    .dsktp-type-normal {
+
+        font-size: 1.2rem;
+
+    }
+
+    .dsktp-type-small {
+
+        font-size: 1rem;
+
+    }
+
+    .dsktp-type-very-small {
+
+        font-size: 0.8rem;
+
+    }
+}

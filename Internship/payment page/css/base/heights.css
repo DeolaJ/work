@@ -1,0 +1,87 @@
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .full-height {
+        height: 100%;
+    }
+
+    .half-height {
+        height: 50%;
+    }
+
+    .two-thirds-height {
+        height: 66.666%;
+    }
+
+    .seven-twelfths-height {
+        height: 58.3333%;
+    }
+
+    .three-quarters-height {
+        height: 75%;
+    }
+
+
+    .one-third-viewport-height {
+
+        height: 33.333vh;
+    }
+
+    .full-viewport-height {
+        height: 100vh;
+    }
+
+    .half-viewport-height {
+        height: 85vw;
+    }
+
+    .full-viewport-width-as-height {
+        height: 100vw;
+    }
+
+    .three-quarters-viewport-height {
+        height: 56.667vw;
+    }
+
+}
+
+
+
+
+@media (min-width: 769px) {
+
+    .dsktp-full-height {
+        height: 100%;
+    }
+
+    .dsktp-seven-eights-height {
+        height: 87.5%;
+    }
+
+    .dsktp-half-height {
+        height: 50%;
+    }
+
+    .dsktp-five-twelfths-heights {
+        height: 41.6667%;
+    }
+
+    .dsktp-one-third-height {
+        height: 33.333%;
+    }
+
+    .dsktp-full-viewport-height {
+        height: 100vh;
+    }
+
+    .dsktp-three-quarters-viewport-height {
+        height: 75vh;
+    }
+
+}

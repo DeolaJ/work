@@ -1,0 +1,118 @@
+
+
+
+
+
+
+/********* VERTICAL ALIGNMENT CLASSES *********/
+
+/*All elements are by default aligned to baseline, use the two classes below to change that behaviour*/
+
+/*
+EXAMPLE:
+    <ul class="vertical-align-top">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    This aligns all <li> elments within ul to the top top of ul
+*/
+
+.vertical-align-middle > * {
+
+    vertical-align: middle
+}
+
+.vertical-align-top > * {
+
+    vertical-align: top
+}
+
+.vertical-align-bottom > * {
+
+    vertical-align: baseline;
+}
+
+
+
+
+/************** HORIZONTAL ALIGNMENT CLASSES **************/
+
+/*Use this to align text, inline-block, as while as inline elements */
+
+/*
+EXAMPLE:
+    <ul class="inline-blks-container dsktp-t-right">
+        <li class="inline-block dsktp-one-fifth dsktp-t-left">Text</li>
+        <li class="inline-block dsktp-one-fifth dsktp-t-left">Text</li>
+        <li class="inline-block dsktp-one-fifth dsktp-t-left">Text</li>
+        <li class="inline-block dsktp-one-fifth dsktp-t-left">Text</li>
+    </ul>
+
+    This aligns all <li> elments within <ul> to the right, dsktp-one-quarter = 20%, there are four <li> elements taking up a total width of 80%, so we have an empty 20% space on the left of the first <li> element.
+    **Note the alignment of text within the <li> elements has been reset to left, with the 'dsktp-t-left' class
+    **Note if an element contains multiple elements that has the 'inline-block' class, use 'inline-blks-container' on that element
+*/
+
+@media (max-width: 768px) {
+
+    .t-left {
+
+        text-align: left
+    }
+
+    .t-middle {
+
+        text-align: center
+    }
+
+    .t-right {
+
+        text-align: right
+    }
+
+    .row {
+
+        white-space: nowrap;
+    }
+
+    .row > * {
+
+        display: inline-block;
+        white-space: normal;
+    }
+
+}
+
+
+@media (min-width: 769px) {
+
+    .dsktp-t-left {
+
+        text-align: left
+    }
+
+    .dsktp-t-middle {
+
+        text-align: center
+    }
+
+    .dsktp-t-right {
+
+        text-align: right
+    }
+
+    .dsktp-row {
+
+        white-space: nowrap;
+    }
+
+    .dsktp-row > * {
+
+        display: inline-block;
+        white-space: normal;
+    }
+
+}

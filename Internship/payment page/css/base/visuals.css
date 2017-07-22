@@ -1,0 +1,165 @@
+
+
+.largeborder, .largeborder-dark, .largeborder-error {
+    border: 4px solid #d8dde6;
+}
+
+.largeborder-dark {
+    border-color: #404040;
+}
+
+.largeborder-error {
+    border-color: #e82110;
+}
+
+
+.largeborder-dotted {
+    border: 4px dashed #d8dde6;
+}
+
+.largeborder-bottom {
+    border-bottom: 4px solid #d8dde6;
+}
+
+.largeborder-left {
+    border-left: 4px solid #d8dde6;
+}
+
+.largeborder-right {
+    border-right: 4px solid #d8dde6;
+}
+
+.largeborder-top {
+    border-top: 4px solid #d8dde6;
+}
+
+.smallborder {
+    border: 1px solid #d8dde6;
+}
+
+.smallborder-dark {
+    border: 1px solid #404040;
+}
+
+.smallborder-dotted {
+    border: 1px dotted #d8dde6;
+}
+
+.smallborder-bottom {
+    border-bottom: 1px solid #d8dde6;
+}
+
+.smallborder-left {
+    border-left: 1px solid #d8dde6;
+}
+
+.smallborder-right {
+    border-right: 1px solid #d8dde6;
+}
+
+.smallborder-top {
+    border-top: 1px solid #d8dde6;
+}
+
+.mediumborder {
+    border: 2px solid #d8dde6;
+}
+
+.default-radius {
+    border-radius: 4px;
+}
+
+
+@media (max-width: 768px) {
+
+    .display-none {
+
+        display: none;
+    }
+
+    .o-hidden {
+
+        overflow: hidden;
+    }
+
+    .o-y-hidden {
+
+        overflow-y: hidden;
+    }
+
+    .not-visible {
+
+        visibility: none;
+    }
+}
+
+@media (min-width: 769px) {
+
+    .dsktp-display-none {
+
+        display: none;
+    }
+
+    .dsktp-o-hidden {
+
+        overflow: hidden;
+    }
+
+    .dsktp-o-y-hidden {
+
+        overflow-y: hidden;
+    }
+
+    .dsktp-not-visible {
+
+        visibility: hidden;
+    }
+}
+
+
+.half-transparent {
+
+    opacity: 0.5;
+}
+
+.nearly-transparent {
+
+    opacity: 0.1;
+}
+
+.twenty-transparent {
+
+    opacity: 0.2;
+}
+
+
+
+.slightly-transparent {
+
+    opacity: 0.88;
+}
+
+.card-box-shadow {
+
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-box-shadow-bottom {
+
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.circle {
+
+    border-radius: 50%;
+}
+
+.pointer {
+
+    cursor: pointer;
+}
+
+.icon-square-normal {
+    height: 3rem;
+    width: 3rem;
+}

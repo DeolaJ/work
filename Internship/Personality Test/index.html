@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personality Test</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+    </head>
+    <style>
+        .personality-header {
+            margin-top: 50px;
+        }
+
+        .personality-header h1 {
+            box-shadow: 0 0 5px rgb(180,180,180);
+            font-size: 27px;
+            line-height: 45px;
+            text-align: center;
+        }
+
+        .personality-content-top {
+            padding: 25px 10%;
+            font-size: 26px;
+            margin: 0 auto;
+            box-shadow: 0 0 5px rgb(180,180,180);
+        }
+
+        .personality-content-top p {
+            font-size: 30px;
+            padding: 20px 10%;
+            text-align: center;
+        }
+
+        .personality-button-pos {
+            width: 100%;
+            padding: 0 30%;
+            text-align: center;
+        }
+
+        .personality-button-width {
+            width: 34%;
+        }
+
+        @media screen and (max-width: 1250px) {
+            .personality-content-top {
+                padding: 20px 6%;
+            }
+        }
+
+        @media screen and (max-width: 1049px) {
+            .personality-content-top {
+                padding: 15px 3%;
+            }
+
+            .personality-button-pos {
+                padding: 0 20%;
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .personality-content-top {
+                font-size: 19px;
+            }
+
+            .personality-content-top p {
+                font-size: 25px;
+            }
+        }
+
+        @media screen and (max-width: 750px) {
+            .personality-button-pos {
+                padding: 0 10%;
+            }
+
+            .personality-content-top {
+                font-size: 19px;
+            }
+
+            .personality-content-top p {
+                font-size: 20px;
+                padding: 5px 5%;
+            }
+
+            .personality-header h1 {
+                font-size: 24px;
+                line-height: 40px;
+            }
+        }    
+
+        @media screen and (max-width: 580px) {
+            .personality-button-pos {
+                padding: 0;
+            }
+
+            .personality-content-top p {
+                font-size: 17px;
+                padding: 3px;
+            }            
+
+            .personality-header h1 {
+                font-size: 20px;
+                line-height: 36px;
+            }
+
+            .personality-button-width {
+                font-size: 14px;
+                font-weight: bold;
+                width: 100%;
+            }
+        }
+    </style>
+<body>
+    <div class='container-fluid personality'>
+            <div class='personality-header'>
+                <h1>PERSONALITY TEST AND MOOD TEST</h1>
+            </div>
+            <br>
+            <div class='personality-content container-fluid'>
+                <div class='personality-content-top'>
+                    <div>
+                        Hello,
+                        <p>You are about to take the <strong>personality and mood</strong> TEST</p>
+                    </div> 
+                    <br>
+                    <div class='container personality-button-pos'>    
+                        <button type='submit' class='btn btn-primary btn-lg personality-button-width'>TAKE TEST</button>
+                    </div>
+                </div>
+            </div>    
+        </div>
+<script src='jquery.js'></script>
+<script src='js/bootstrap.js'></script>
+</body>
+</html>    
